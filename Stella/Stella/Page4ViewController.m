@@ -94,7 +94,7 @@
     UIImage *rocketWithStellaImage = [UIImage imageWithContentsOfFile:rocketWithStellaFilePath];
     [self.rocketImageView setImage:rocketWithStellaImage];
     
-    [[SoundPlayer sharedSoundPlayer] playSound:@"launch" givenNarrating:self.narrationPlaying];
+    [[SoundPlayer sharedSoundPlayer] playSystemSound:@"launch"];
     
     [UIView animateWithDuration:2.0
                           delay:1.5
